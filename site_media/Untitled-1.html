@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="style/css.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+<body>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="header"> 
+            <img src="img/header.jpg" alt="" />
+    </td>
+  </tr>
+  <tr>
+  <td id="menu">
+		<div><a href="#">Главная</a></div>  
+    </td>
+  </tr>
+  <td id="main_block" valign="top">
+    
+    
+    <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td id="info" valign="top">        
+        Текст
+        </td>
+        <td id="rightblock" valign="top">
+        
+        <div id="login_form" align="center">
+                <form method="post" action="">
+                  Логин: <span style="margin-left: 19px;"><input name="login" type="text" value="" /></span><br />
+                  Пароль: <span style="margin-left: 8px;"><input name="password" type="password" value="" /></span>
+                  <div align="right" style="margin-right: 15px;"><input type="submit" name="enter" value="Войти" /></div>
+                </form>
+        </div>
+        <div id="lk_actions">
+              <a href="">Регистрация</a> | 
+              <a href="">Забыли пароль?</a>
+        </div>
+        <div class="right_title">Статьи</div>
+        <div class="right_items">
+            <div><a href="#">CodeIgniter</a></div>
+        </div>  
+          
+        
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+  <tr>
+    <td id="footer" align="center">Copyright 2011.</td>
+  </tr>
+</table>
+
+
+</body>
+</html>
