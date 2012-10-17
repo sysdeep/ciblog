@@ -1,0 +1,82 @@
+#--- articles ---
+CREATE TABLE `ciblog`.`articles` (
+  `id` INT  NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(100)  NOT NULL,
+  `title_en` VARCHAR(100)  NOT NULL,
+  `desc` TEXT  NOT NULL,
+  `text` TEXT  NOT NULL,
+  `mini_img` VARCHAR(100)  NOT NULL,
+  `author` VARCHAR(100)  NOT NULL,
+  `date` DATE  NOT NULL,
+  `keywords` TEXT  NOT NULL,
+  `category` VARCHAR(10)  NOT NULL,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+#-----------------
+
+#--- categories ---
+CREATE TABLE `ciblog`.`categories` (
+  `id` INT  NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(100)  NOT NULL,
+  `keywords` TEXT  NOT NULL,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+#------------------
+
+#--- pages ---
+CREATE TABLE `ciblog`.`pages` (
+  `id` INT  NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(100)  NOT NULL,
+  `text` TEXT  NOT NULL,
+  `keywords` TEXT  NOT NULL,
+  `hidden` VARCHAR(10)  NOT NULL,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+#--------------
+
+#--- tech_sections ---
+CREATE TABLE `ciblog`.`tech_sections` (
+  `id` INT  NOT NULL AUTO_INCREMENT,
+  `page` VARCHAR(100)  NOT NULL,
+  `title` VARCHAR(100)  NOT NULL,
+  `keywords` TEXT  NOT NULL,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+#---------------------
+
+#--- users ---
+CREATE TABLE `ciblog`.`users` (
+  `id` INT  NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(100)  NOT NULL,
+  `password` VARCHAR(100)  NOT NULL,
+  `email` VARCHAR(100)  NOT NULL,
+  `ip` VARCHAR(100)  NOT NULL,
+  `status` VARCHAR(10)  NOT NULL,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+#-------------
+
+#--- comments ---
+CREATE TABLE `ciblog`.`comments` (
+  `id` INT  NOT NULL AUTO_INCREMENT,
+  `author` VARCHAR(100)  NOT NULL,
+  `comment` TEXT  NOT NULL,
+  `avatar` VARCHAR(100)  NOT NULL,
+  `note_id` VARCHAR(100)  NOT NULL,
+  `date` DATE  NOT NULL,
+  `time` VARCHAR(10)  NOT NULL,
+  `category` VARCHAR(100)  NOT NULL,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+
+#----------------
+
+#--- alert pages ---
+ALTER TABLE `ciblog`.`pages` ADD COLUMN `title_en` VARCHAR(100)  NOT NULL AFTER `title`;
+#-------------------
