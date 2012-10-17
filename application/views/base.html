@@ -44,7 +44,11 @@
         </div>
         <div class="right_title">Статьи</div>
         <div class="right_items">
-            <div><a href="#">CodeIgniter</a></div>
+            
+            {% for line in categories %}
+                <div><a href="#">{{ line.title }}</a></div>
+            {% endfor %}
+            <div><a href="{{ base_url() }}index.php/articles/">Все статьи</a></div>
         </div>  
           
         

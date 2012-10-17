@@ -7,6 +7,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "application/views/base.html",
+			"settings":
+			{
+				"buffer_size": 2273,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/articles.php",
+			"settings":
+			{
+				"buffer_size": 469,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/models/articles_model.php",
+			"settings":
+			{
+				"buffer_size": 231,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -32,6 +56,18 @@
 	},
 	"file_history":
 	[
+		"/home/nia/Development/www/ciblog/application/controllers/pages.php",
+		"/home/nia/Development/www/ciblog/application/models/pages_model.php",
+		"/home/nia/Development/www/ciblog/application/libraries/Twig.php",
+		"/home/nia/Development/www/ciblog/application/config/routes.php",
+		"/home/nia/Development/www/ciblog/application/config/config.php",
+		"/home/nia/Development/www/ciblog/application/config/autoload.php",
+		"/home/nia/Development/www/ciblog/application/config/database.php",
+		"/home/nia/Development/www/ciblog/application/views/blocks/header_view.php",
+		"/home/nia/Development/www/ciblog/application/views/template_view.php",
+		"/home/nia/Development/www/ciblog/application/controllers/tstwig.php",
+		"/home/nia/Development/www/ciblog/application/views/tstwig.html",
+		"/home/nia/Development/www/ciblog/application/config/twig.php",
 		"/home/nia/Development/Django/comcon_inside/report/templates/elc/item_page.html",
 		"/home/nia/Development/Django/comcon_inside/report/elc/urls.py",
 		"/home/nia/Development/Django/comcon_inside/report/templates/projects/add_project.html",
@@ -72,8 +108,91 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "application/views/base.html",
+					"settings":
+					{
+						"buffer_size": 2273,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2049,
+								2049
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 432.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/controllers/articles.php",
+					"settings":
+					{
+						"buffer_size": 469,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								469,
+								469
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/models/articles_model.php",
+					"settings":
+					{
+						"buffer_size": 231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								227,
+								227
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -83,7 +202,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"layout":
 	{
