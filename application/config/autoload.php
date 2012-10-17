@@ -52,7 +52,8 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('database', 'session', 'template');
+$autoload['libraries'] = array('database','session', 'twig');
+//$autoload['libraries'] = array('database', 'session', 'template');
 
 
 /*
@@ -109,7 +110,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array();
+$autoload['model'] = array('pages_model');
 
 
 /* End of file autoload.php */

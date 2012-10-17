@@ -7,8 +7,16 @@ class Pages extends CI_Controller {
 		//$this->load->view('template_view');
 
 		//$this->load->library('template');
-		$this->template->page_view();
+		//$this->template->page_view();
+		redirect(base_url());
+		
 
+	}
+
+	function page($title){
+		$data['pages'] = $this->pages_model->get_pages();
+		$data['page_info'] = $this->pages_model->get_page_info($title);
+		echo $this->twig->render('base.html', $data);
 	}
 
 }
